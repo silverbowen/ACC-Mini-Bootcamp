@@ -60,11 +60,11 @@ span {
 	color: darkred;
 }
 
-.ToDoList {
+.NotToDoList {
 	color: orange;
 }
 
-.ToDoList .hoverText{
+.NotToDoList .hoverText{
     visibility: hidden;
     color: fuchsia;
     background: turquoise;
@@ -72,7 +72,7 @@ span {
     border-radius: 6px;
 	}
 
-.ToDoList:hover .hoverText{
+.NotToDoList:hover .hoverText{
     display: inline-block;
     visibility: visible;
 }
