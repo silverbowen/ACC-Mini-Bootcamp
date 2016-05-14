@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+
+h2 {
+	color: brown;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    border-color: aqua;
+	border-width: 8px;
+	border-style: groove outset;
+	border-radius: 6px;
+	padding: 10px 20px 10px 40px;
+}
+
+span {
+	color: black;
+	background: red;
+	padding: 0px 2px 0px 2px;
+	border-radius: 2px
+}
+
+input {
+	border-color: red;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.ToDoList .hoverText{
+    visibility: hidden;
+    color: fuchsia;
+    background: turquoise;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.ToDoList:hover .hoverText{
+    display: inline-block;
+    visibility: visible;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+#container {
+	width: 360;
+	margin: 100px auto;
+	border-width: 2px;
+	border-style: solid;
+	border-color: gray;
+	border-radius: 6px;
+}
