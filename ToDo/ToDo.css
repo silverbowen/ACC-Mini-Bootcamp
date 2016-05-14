@@ -3,18 +3,41 @@ body {
 }
 
 h1 {
-	color:blue;
+	color: brown;
+}
+
+h2 {
+	color: blue;
+	background: yellow;
+	border-color: purple;
+	border-width: 2px;
+	border-style: solid;
+    padding: 10px;
+}
+
+h6 {
+	color: pink;
+	background: green;
+	border-color: red;
+	border-width: 4px;
+	border-style: dashed;
+    padding: 50px 30px 50px 80px;
 }
 
 ol {
-    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+	border-color: black;
+	border-width: 4px;
+	border-style: dotted;
+    padding: 50px 30px 50px 80px;
 }
 
 ul {
-    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+    border-color: aqua;
+	border-width: 8px;
+	border-style: groove outset;
+    padding: 50px 30px 50px 80px;
 }
-
-li {
-
-}
-
