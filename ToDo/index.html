@@ -4,27 +4,33 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<title>To Do List</title>
     <script type="text/javascript" src="assets/js/lib/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel=”stylesheet” type=”text/css” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6/css/font-awesome.css”>
+    <link rel=”stylesheet” type=”text/css” href=”assets/css/font-awesome-4.6.3/css/font-awesome.css”>
 
 </head>
-<body>
-   <div>
-        <h2 style="padding-top: 60px" class="ToDoList">This is a To Do List.<br>
+<body style="padding-top: 20px">
+    <div>
+        <h2 class="ToDoList">This is a To Do List.<br>
         <div class="hoverText">I made it in a single day.</div>
         </h2>
     </div>
 	
     <div id="container">
-        <h2>To Do List</h2>
+        <h1>To Do List <i class="fa fa-pencil-square-o"></i></h1>
         <input type="text" placeholder="--add new item--">
         <br><br>
         <ul>
-            <li><span>X</span> Make a To Do List</li>
+            <li><span>X</span> Make a To Do List </li>
         </ul>
     </div>
 
-    <div>Click on an item to strikethrough.</div>
-    <div>Click on an item's X to remove item.</div>
-    <div>Enter text in the input box to add item.</div>
+    <div class="shadowBox">
+        <div>Click on an item to strikethrough.</div>
+        <div>Hover over an item to reveal the item's X.</div>
+        <div>Click on an item's X to remove the item.</div>
+        <div>Enter text in the input box to add an item.</div>
+    </div>
     <br>
     
     <script type="text/javascript" src="assets/js/ToDo.js"></script>

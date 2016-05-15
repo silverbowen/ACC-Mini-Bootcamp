@@ -1,40 +1,96 @@
 body {
+    font-family: Roboto;
     text-align: center;
 }
 
+h1 {
+	background: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px 10px 20px;
+	border-radius: 6px 6px 0px 0px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
 h2 {
-	color: brown;
+	background: #2980b9;
+	color: white;
+	border-radius: 6px 6px 0px 0px;
+    box-shadow: 10px 5px 15px black;
 }
 
 ul {
     display: inline-block;
     text-align: left;
-    border-color: aqua;
+    border-color: #2980b9;
 	border-width: 8px;
 	border-style: groove outset;
 	border-radius: 6px;
-	padding: 10px 20px 10px 40px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 span {
-	color: black;
+	color: white;
 	background: red;
-	padding: 0px 2px 0px 2px;
-	border-radius: 2px
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+	border-radius: 2px;
+}
+
+li {
+	height: 40px;
+	background: white;
+	line-height: 40px;
+	padding-right: 20px;
+}
+
+li:nth-child(2n) {
+	background: #f7f7f7;
+}
+  
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
 }
 
 input {
-	border-color: red;
-	border-radius: 4px;
+	font-size: 18px;
+	color: 2980b9;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border-radius: 0px 0px 4px 4px;
 	text-align: center;
 }
 
+input:focus {
+	background-color: white;
+	border: 3px solid green;
+	outline: none;
+}
+
+.ToDoList {
+    padding-top: 10px;
+    display: inline-block;
+    border-radius: 6px;
+    }
+
 .ToDoList .hoverText{
     visibility: hidden;
-    color: fuchsia;
-    background: turquoise;
+    color: #2980b9;
+    background: white;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 0px 0px 6px 6px;
 }
 
 .ToDoList:hover .hoverText{
@@ -50,8 +106,17 @@ input {
 #container {
 	width: 360;
 	margin: 100px auto;
-	border-width: 2px;
-	border-style: solid;
-	border-color: gray;
+    box-shadow: 10px 5px 15px black;
 	border-radius: 6px;
+}
+
+.fa-pencil-square-o {
+	float: right;
+}
+
+.shadowBox {
+	box-shadow: 10px 5px 15px black;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 6px;
 }

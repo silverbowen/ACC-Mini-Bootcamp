@@ -3,9 +3,10 @@ function itemWasClicked() {
 };
 $(document).on('click', 'li', itemWasClicked);
 
-$(document).on('click', 'span', function() {
-	$(this).parent().remove();
-});
+function removeMe() {
+    $(this).parent().remove();
+}
+$(document).on('click', 'span', removeMe);
 
 $('input').keypress( function(event) {
     if (event.which === 13) {
@@ -13,3 +14,5 @@ $('input').keypress( function(event) {
     	$(this).val("");
     }
 });
+
+$(document).on('click', 'h2', removeMe);
